@@ -6,10 +6,10 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "astral-sh.uv",
         "ms-python.python"
       ]
     }
   },
-  "postCreateCommand": "uv pip install fastapi"
+  "forwardPorts": [8000],
+  "postCreateCommand": "pip install --upgrade pip && pip install fastapi uvicorn"
 }
